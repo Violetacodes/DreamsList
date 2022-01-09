@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import imageone from './balloon.jpeg';
+import imagetwo from './dreambottle.jpeg';
+import { DreamsList } from './DreamsList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div className='app'>
+    <div className='container'>
+     <img src={ imageone } width="200px" alt='balloon'/>
+     </div>
+     <div className='container'>
+     <h1>List of my Dreams</h1>
+     </div>
+     <DreamsList/>
+     <div className='container'>
+     <img src={ imagetwo } width="200px" alt='dreambottle'/>
+     </div>
+  </div>
   );
 }
 
